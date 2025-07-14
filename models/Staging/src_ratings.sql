@@ -1,5 +1,5 @@
 with src_ratings as (
-    select * from movielens.raw.raw_ratings
+    select * from {{ source('Netflix','raw_ratings')}}
 )
 
 select * from src_ratings
