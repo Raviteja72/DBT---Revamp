@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: src_ratings
+    columns:
+      - name: userid
+        tests: 
+          - not_null 
+
+
